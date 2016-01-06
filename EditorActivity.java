@@ -37,6 +37,8 @@ import java.util.Random;
 /**
  * Created by Narendran on 05-01-2016.
  */
+ 
+ 
 public class EditorActivity extends Activity {
 
     private static ImageView ivPhoto;
