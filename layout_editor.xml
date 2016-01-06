@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a512090c">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Squirrel Editor"
+                android:id="@+id/tvTitle"
+                android:layout_gravity="center_horizontal"
+                android:background="#00ffffff"
+                android:textColor="#ff4e37"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivPhoto"
+                android:layout_gravity="center"
+                android:src="@drawable/fruit" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:onClick="PhotoEditor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ibCamera"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="70dp" />
+
+
+
+                <ImageButton
+                    android:onClick="PhotoEditor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ibGallery"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dp" />
+
+                <ImageButton
+                    android:onClick="PhotoEditor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ibSave"
+                    android:src="@android:drawable/ic_menu_save"
+                    android:layout_marginLeft="40dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Filter"
+                android:id="@+id/tvSelection"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#ff4e37"
+                android:textSize="20dp" />
+
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <Button
+                        android:onClick="PhotoEditor"
+                        android:layout_width="72dp"
+                        android:layout_height="70dp"
+                        android:text="Grey"
+                        android:id="@+id/btnGrey"
+                        android:textColor="#ff0f00"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:onClick="PhotoEditor"
+                        android:layout_width="72dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/btnCartoon"
+                        android:text="Toon"
+                        android:textColor="#ff0f00"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:onClick="PhotoEditor"
+                        android:layout_width="72dp"
+                        android:layout_height="70dp"
+                        android:text="Snow"
+                        android:id="@+id/btnSnow"
+                        android:textColor="#ff0f00"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:onClick="PhotoEditor"
+                        android:layout_width="72dp"
+                        android:layout_height="70dp"
+                        android:text="Sepia"
+                        android:id="@+id/btnSepia"
+                        android:textColor="#ff0f00"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:onClick="PhotoEditor"
+                        android:layout_width="72dp"
+                        android:layout_height="70dp"
+                        android:text="Flea"
+                        android:id="@+id/btnFlea"
+                        android:textColor="#ff0f00"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:onClick="PhotoEditor"
+                        android:layout_width="72dp"
+                        android:layout_height="70dp"
+                        android:text="Water"
+                        android:id="@+id/btnReflect"
+                        android:textColor="#ff0f00"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
